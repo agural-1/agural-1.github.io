@@ -9,7 +9,7 @@
     <description content="A website about sprinting, including information on sprinting distances, times, and stories.">
 </head>
 <body>
-    <div id="wrapper" class="homepage">
+    <div id="wrapper">
         <nav>
             <a href="index.html" class="logo">
             <img src="logo.png" alt="Sprinting Logo">
@@ -22,29 +22,38 @@
             <li><a href="comment.html">Reach Out</a></li>
         </ul>
         </nav>
-        <div class="hero" id="homehero"><h1>What Is Sprinting?</h1></div>
-        <div class="divider">
-                <p>
-                    Sprinting is a form of running characterized by high speeds over short distances. 
-                    For these althletes, months and years of training results in a race which is over in seconds.
-                    Read and learn more about sprinting on this website.
-                </p>
-        </div>
         <main>
-            <section>
-                <div class="quotes">
-                    "Mind is everything: muscle—pieces of rubber. 
-                    All that I am, I am because of my mind." -Paavo Nurmi
-                </div>
-                <div class="quotes">
-                    "If you don't have confidence, you'll always find a way not to win." -Carl Lewis
-                </div>
-                <div class="quotes">
-                    "Don't think about the start of the race, think about the ending." -Usain Bolt
-                </div>
-            </section>
+            <h1>Please reach out with any questions, comments, or suggestions for the site!<h1>
+            <form action="#" method="post">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" rows="5" required></textarea>
+                <br><br>
+
+                <label for="rating">Site Rating (1–5):</label>
+                <select id="rating" name="rating" required>
+                    <option value="">--Select--</option>
+                    <option value="1">1 - Poor</option>
+                    <option value="2">2</option>
+                    <option value="3">3 - Average</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Excellent</option>
+                </select>
+                <br><br>
+
+                <label for="extra">Anything else:</label>
+                <textarea id="extra" name="extra" rows="4"></textarea>
+                <br><br>
+                <button type="submit">Submit</button>
+            </form>
         </main>
-            <div id="sideimage"></div> 
+
 
         <footer>
             <div class="footlink">

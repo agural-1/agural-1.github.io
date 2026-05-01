@@ -10,6 +10,7 @@ nav{
     background-color: #9797c9;
     color: #040316;
     padding: 0;
+    margin: 0;
     display: flex;
     font-weight: bold;
     align-items: center;
@@ -83,6 +84,65 @@ p a:hover {color: #c7a948;}
 p a{
     text-decoration: none;
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+caption {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 10px;
+    color: #040316;
+}
+
+th {
+    background-color: #9797c9;
+    color: #040316;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 10px 12px;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f0e4;
+}
+td:first-child {
+    font-weight: bold;
+}
+tr:last-child {
+    font-weight: bold;
+    color: #297a47;
+}
+tr:hover {
+    background-color: #c7a948CC;
+    transition: 0.2s;
+}
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #297a47;
+    font-family: inherit;
+    font-size: 1em;
+    background-color: #fff;
+}
 .divider{
     background-color: #c7a948CC;
     color: #040316;
@@ -133,6 +193,10 @@ p a{
     margin: 0 auto;
     padding: 20px;
 }
+.form-wrapper {
+    display: flex;
+    align-items: flex-start;
+}
 #wrapper{
     background-color: #f1f0e4;
     min-height: 100vh;
@@ -148,6 +212,8 @@ p a{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
 }
 #sideimage{
     aspect-ratio: 3 / 4;
@@ -243,6 +309,5 @@ p a{
             "divider divider"
             "main sideimage"
             "footer footer";
-        gap: 20px;
     }
 }
